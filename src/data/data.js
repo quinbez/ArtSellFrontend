@@ -9,6 +9,9 @@ import {
     UilUsdSquare,
     UilSignOutAlt
 } from '@iconscout/react-unicons';
+import img1 from '../imgs/img1.png';
+import img2 from '../imgs/img2.png';
+import img3 from '../imgs/img3.png';
 
 // sidebar data
 export  const SidebarData = [
@@ -81,4 +84,26 @@ export const CardsData = [
             },
         ],
     },
-];
+]
+// updates data
+export const UpdatesData =[
+    {
+        img: img1,
+        name: "Andrew Thomas",
+        noti: "has ordered an ink drawing",
+        time: "25 seconds ago",
+    },
+    {
+        img: img2,
+        name: "Thomas Shelby",
+        noti: "has ordered a digital drawing",
+        time: "10 seconds ago",
+    },
+    {
+        img: img3,
+        name: "Chris Tiggens",
+        noti: "The sketch has been delivered to Chris Tiggens ",
+        time: "15 minutes ago",
+    },
+]
+//UserPage
