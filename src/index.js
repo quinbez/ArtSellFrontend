@@ -1,9 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import User from './Pages/User';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/user",
+    element: <User />,
+  },
+]);
 
 ReactDOM.render(
-    <App />,
+    <RouterProvider router = {router} />,
   document.getElementById('root')
 );
 

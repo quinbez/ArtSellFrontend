@@ -12,7 +12,6 @@ function App() {
           <RightSide/>
         </div>
       </div>
-     
   );
 }
 
