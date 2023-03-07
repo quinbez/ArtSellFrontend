@@ -5,7 +5,7 @@ import { SidebarData } from '../../data/data';
 import { UilSignOutAlt , UilBars} from '@iconscout/react-unicons';
 import { useState } from 'react';
 import {motion} from 'framer-motion';
-import { Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -43,15 +43,15 @@ const Sidebar = () => {
         <div className="menu">
              {SidebarData.map((item, index)=>{
               return (
-                <div className={selected === index? 'menuItem active': 'menuItem'}
+                <Link to={item.path} className={selected === index? 'menuItem active': 'menuItem'}
                 key = {index}
                 onClick = {()=>setSelected(index)}
                 >
                   <item.icon/>
-                  <Link to={item.path}>
+                  <span >
                     {item.heading}
-                  </Link>
-                </div>
+                  </span>
+                </Link>
               );
              })}
              <div className="menuItem">

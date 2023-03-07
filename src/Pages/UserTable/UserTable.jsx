@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Table.css'
+import './UserTable.css'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -34,8 +34,8 @@ const makeStyles = (status)=>{
 }
 export default function BasicTable() {
   return ( 
-    <div className="Table">
-      <h3>Recent Orders</h3>
+    <div className="UserTable">
+      <h3>All Users</h3>
     <TableContainer component={Paper}
     // style = "boxshadow: "
     >

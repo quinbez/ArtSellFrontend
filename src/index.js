@@ -6,7 +6,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import User from './Pages/User';
-
+import Order from './Pages/Order';
+import Payment from './Pages/Payment';
+import Product from './Pages/Product';
+import Category from './Pages/Category';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +18,22 @@ const router = createBrowserRouter([
   {
     path: "/user",
     element: <User />,
+  },
+  {
+    path: "/product",
+    element: <Product />,
+  },
+  {
+    path: "/category",
+    element: <Category />,
+  },
+  {
+    path: "/payment",
+    element: <Payment />,
+  },
+  {
+    path: "/order",
+    element: <Order />,
   },
 ]);
 
