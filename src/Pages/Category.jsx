@@ -1,5 +1,6 @@
 import React from 'react'
 import MainLayout from '../Layout/MainLayout'
+import CategoryTable from '../Pages/CategoryTable/CategoryTable'
 
 const Category = () => {
   return (
@@ -9,6 +10,7 @@ const Category = () => {
         <MainLayout/>
         <h1>Categories</h1>
       </div>
+      <CategoryTable />
     </div>
   </div>
     )
