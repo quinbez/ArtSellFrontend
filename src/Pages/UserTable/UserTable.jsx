@@ -8,30 +8,18 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-function createData(customer, product, artist,status, price, date) {
-  return { customer, product, artist, status, price, date };
+function createData(user, role, email, phone_number, city, house_number) {
+  return { user, role, email, phone_number, city, house_number };
 }
 
 const rows = [
-  createData('Hanna Daniels', "ink drawing", "Kim Robon", "Delivered", 39, "Feburary 23, 2023"),
-  createData('Nathan Scott', "painting", "Jack Michaels","Delivered", 37, "Feburary 21, 2023"),
-  createData('Haley Johns', "sketch", "Antony Jules","Pending",24,"Feburary 21, 2023"),
-  createData('Michael Scoffield', "ink drawing", "Jack Michaels","Delivered" , 67, "Feburary 23, 2023"),
-  createData('Kevil Miles', "digital", "Raul Berry","Pending", 49, "Feburary 22. 2023"),
+  createData('Hanna Daniels', "Admin", "Kim Robon@gmail.com", "0929334304", "Addis Ababa", "23"),
+  createData('Nathan Scott', "Artist", "Jack Michaels@gmail.com","0929334305", "Jimma", "21"),
+  createData('Haley Johns', "Artist", "Antony Jules@yahoo.com","0929334306","Addis Ababa","21"),
+  createData('Michael Scoffield', "User", "Jack Michaels@yahoo.com","0929334307" , "Hawassa", "23"),
+  createData('Kevil Miles', "User", "Raul Berry@gmail.com","0929334308", "Dire Dawa", "22"),
 ];
-const makeStyles = (status)=>{
-  if(status ==="Delivered"){
-    return{
-      background : 'rgb(145 254 159 / 47%)',
-      color: 'green',
-    }
-  }else{
-    return {
-      background: '#ffadad8f',
-      color: 'red',
-    }
-  }
-}
+
 export default function BasicTable() {
   return ( 
     <div className="UserTable">
@@ -42,12 +30,12 @@ export default function BasicTable() {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Customer</TableCell>
-            <TableCell align="left">Product</TableCell>
-            <TableCell align="left">Artist</TableCell>
-            <TableCell align="left">Status</TableCell>
-            <TableCell align="left">Price (ETB)</TableCell>
-            <TableCell align="left">Order Date</TableCell>
+            <TableCell>Name</TableCell>
+            <TableCell align="left">Role</TableCell>
+            <TableCell align="left">Email</TableCell>
+            <TableCell align="left">Phone Number</TableCell>
+            <TableCell align="left">City</TableCell>
+            <TableCell align="left">House_number</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -57,17 +45,13 @@ export default function BasicTable() {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.customer}
+                {row.user}
               </TableCell>
-              <TableCell align="left">{row.product}</TableCell>
-              <TableCell align="left">{row.artist}</TableCell>
-              <TableCell align="left">
-                <span className="status" style = {makeStyles(row.status)}>
-                    {row.status}
-                </span>
-              </TableCell>
-              <TableCell align="left">{row.price}</TableCell>
-              <TableCell align="left">{row.date}</TableCell>
+              <TableCell align="left">{row.role}</TableCell>
+              <TableCell align="left">{row.email}</TableCell>
+              <TableCell align="left">{row.phone_number}</TableCell>
+              <TableCell align="left">{row.city}</TableCell>
+              <TableCell align="left">{row.house_number}</TableCell>
             </TableRow>
           ))}
         </TableBody>

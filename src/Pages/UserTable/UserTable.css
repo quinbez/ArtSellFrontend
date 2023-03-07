@@ -14,10 +14,7 @@
 .Table :first-child{
     border-radius: 0.7rem!important;
 }
-.status{
-    padding: 8px;
-    border-radius: 9px;
-}
+
 @media screen and (max-width:1200px) {
     .Table{
         width: 170%;
