@@ -10,6 +10,7 @@ import Order from './Pages/Order';
 import Payment from './Pages/Payment';
 import Product from './Pages/Product';
 import Category from './Pages/Category';
+import Donation from './Pages/Donation';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/order",
     element: <Order />,
+  },
+  {
+    path: "/donation",
+    element: <Donation/>,
   },
 ]);
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './PaymentTable.css'
+import './DonationsTable.css'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -22,8 +22,7 @@ const rows = [
 
 export default function BasicTable() {
   return ( 
-    <div className="PaymentTable">
-      <h3>Payments</h3>
+    <div className="Donations">
     <TableContainer component={Paper}
     // style = "boxshadow: "
     >
@@ -32,8 +31,7 @@ export default function BasicTable() {
           <TableRow>
             <TableCell>User</TableCell>
             <TableCell align="left">Role</TableCell>
-            <TableCell align="left">Product</TableCell>
-            <TableCell align="left">Amount</TableCell>
+            <TableCell align="left">Amount (ETB)</TableCell>
             <TableCell align="left">Date</TableCell>
           </TableRow>
         </TableHead>
@@ -47,7 +45,6 @@ export default function BasicTable() {
                 {row.name}
               </TableCell>
               <TableCell align="left">{row.role}</TableCell>
-              <TableCell align="left">{row.product}</TableCell>
               <TableCell align="left">{row.amount}</TableCell>
               <TableCell align="left">{row.date}</TableCell>
             </TableRow>
@@ -55,11 +52,7 @@ export default function BasicTable() {
         </TableBody>
       </Table>
     </TableContainer>
-    <div className='linkButton'>
-        <a className = "button" href='/donation'>
-          View Donations
-        </a>
-      </div>
-    </div>
+    <a className="back" href='/payment'>back</a>
+  </div>
   );
 }

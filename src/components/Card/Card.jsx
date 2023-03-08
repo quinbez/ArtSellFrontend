@@ -4,7 +4,7 @@ import { motion, AnimateSharedLayout } from 'framer-motion'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import {UilTimes} from '@iconscout/react-unicons'; 
-import Chart from 'react-apexcharts';
+import SoldItemsTable from './SoldItemsTable';
 const Card = (props) => {
     const [expanded, setExpanded] = useState(false)
   return (
@@ -60,9 +60,8 @@ function ExpandedCard({param, setExpanded}){
         </div>
         <span>{param.title}</span>
         <div className="chartContainer">
-            {/* something here */}
+           <SoldItemsTable/>
         </div>
-        <span>Last 24 hours</span>
         </motion.div>
     )
 }

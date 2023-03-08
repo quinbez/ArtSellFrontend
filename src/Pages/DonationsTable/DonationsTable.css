@@ -4,7 +4,7 @@
 .MuiTableRow-root.MuiTableRow-head>*{
     font-weight: bold!important;
 }
-.PaymentTable{
+.Donations{
     padding-top: 8rem;
     padding-left: 2rem;
 }
@@ -14,19 +14,11 @@
 .Table :first-child{
     border-radius: 0.7rem!important;
 }
-.linkButton{
-    padding-top: 2rem;
-}
-.linkButton .button{
-    padding: 0.5rem;
-    padding-top: 1rem;
-    justify-content: center;
-    align-items: center;
+.back{
+    padding-left: 94%;
+    color: gray;
     text-decoration: none;
-    color: white;
-    background: lightgreen;
-    border-radius: 0.7rem;
-    border: 0;
+    font-size: 20px;
 }
 @media screen and (max-width:1200px) {
     .Table{
