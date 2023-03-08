@@ -11,6 +11,7 @@ import Payment from './Pages/Payment';
 import Product from './Pages/Product';
 import Category from './Pages/Category';
 import Donation from './Pages/Donation';
+import Home from './components/Customer/Home';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/donation",
     element: <Donation/>,
+  },
+  {
+    path: "/home",
+    element: <Home />,
   },
 ]);
 

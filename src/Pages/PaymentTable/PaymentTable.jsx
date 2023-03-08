@@ -25,7 +25,6 @@ export default function BasicTable() {
     <div className="PaymentTable">
       <h3>Payments</h3>
     <TableContainer component={Paper}
-    // style = "boxshadow: "
     >
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>

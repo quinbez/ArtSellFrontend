@@ -142,7 +142,16 @@ menu .menu :last-child{
     padding-left: 2rem;
     padding-top: 2rem;
 }
-
+.userNavbar{
+    padding-top: 3rem;
+    padding-left: 10%;
+}
+.userMenu{
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;   
+}
 @media screen and (max-width:1200px) {
     .menuItem>span{
         display: none;
