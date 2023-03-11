@@ -34,7 +34,7 @@ const makeStyles = (status)=>{
 }
 export default function BasicTable() {
   return ( 
-    <div className="ProductTable">
+    <div className="ProdTable">
       <h3>All Products</h3>
     <TableContainer component={Paper}
     // style = "boxshadow: "

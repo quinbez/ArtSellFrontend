@@ -4,7 +4,7 @@
 .MuiTableRow-root.MuiTableRow-head>*{
     font-weight: bold!important;
 }
-.ProductTable{
+.ProdTable{
     padding-top: 8rem;
     padding-left: 2rem;
 }
