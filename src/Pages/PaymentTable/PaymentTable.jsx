@@ -7,6 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import {Link } from 'react-router-dom';
 
 function createData(name, role, product, amount, date) {
   return {name, role, product, amount, date };
@@ -55,9 +56,9 @@ export default function BasicTable() {
       </Table>
     </TableContainer>
     <div className='linkButton'>
-        <a className = "button" href='/donation'>
+        <Link className = "button" to='/donation'>
           View Donations
-        </a>
+        </Link>
       </div>
     </div>
   );

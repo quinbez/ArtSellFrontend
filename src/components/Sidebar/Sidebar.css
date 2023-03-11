@@ -18,6 +18,7 @@
     align-items: center;
     justify-content: center;
     height: 4%;
+    padding-left: 2.6rem;
 }
 .logo>img{
     height: 3rem;
