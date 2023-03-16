@@ -12,39 +12,29 @@ import Product from './Pages/Product';
 import Category from './Pages/Category';
 import Donation from './Pages/Donation';
 import Home from './components/Customer/Home';
+import Products from './components/Customer/Products';
+import Services from './components/Customer/Services';
+import Contact from './components/Customer/Contact';
+import UserPayment from './components/Customer/UserPayment';
+import UserOrders from './components/Customer/UserOrders';
+import Cart from './components/Customer/Cart';
+
+
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/user",
-    element: <User />,
-  },
-  {
-    path: "/product",
-    element: <Product />,
-  },
-  {
-    path: "/category",
-    element: <Category />,
-  },
-  {
-    path: "/payment",
-    element: <Payment />,
-  },
-  {
-    path: "/order",
-    element: <Order />,
-  },
-  {
-    path: "/donation",
-    element: <Donation/>,
-  },
-  {
-    path: "/home",
-    element: <Home />,
-  },
+  {path: "/", element: <App />},
+  {path: "/user", element: <User />},
+  {path: "/product", element: <Product />},
+  {path: "/category", element: <Category />},
+  {path: "/payment", element: <Payment />},
+  {path: "/order", element: <Order />},
+  {path: "/donation", element: <Donation/>},
+  {path: "/home", element: <Home />},
+  {path: "/allProducts", element: <Products/>},
+  {path: "/services", element: <Services/>},
+  {path: '/contact', element:<Contact/>},
+  {path:'userpayment', element:<UserPayment/>},
+  {path:'/userorders', element:<UserOrders/>},
+  {path:'/usercart', element:<Cart/>},
 ]);
 
 ReactDOM.render(
