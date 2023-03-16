@@ -5,10 +5,10 @@ const Products = () => {
   return (
     <div className="App">
     <div className='AppGlass'>   
-    <Navbar/>
-    {/* <div>
-    <h1 className='pageTitle'>Our Products</h1>
-    </div> */}
+      <Navbar/>
+      <div className='pageTitle'>
+        <h1>Our Products</h1>
+      </div>
     </div>
   </div>  
   )

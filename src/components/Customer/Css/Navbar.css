@@ -44,7 +44,7 @@
 .active{
     background:white;
 }
-/* .pageTitle{
+.pageTitle{
     text-align: center;
-    padding-top: 5rem;
-} */
+    margin-top: 5rem;
+}

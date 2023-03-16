@@ -6,9 +6,9 @@ const Services = () => {
     <div className="App">
         <div className='AppGlass'>   
             <Navbar/>
-            {/* <div>
-            <h1 className='pageTitle'>Our Services</h1>
-            </div> */}
+            <div  className='pageTitle'>
+                <h1>Our Services</h1>
+            </div>
         </div>
     </div>
     )
