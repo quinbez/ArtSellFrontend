@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../imgs/logo.png';
+import Logo from '../images/logo.png';
 import './Sidebar.css'
 import { SidebarData } from '../../data/data';
 import { UilSignOutAlt , UilBars} from '@iconscout/react-unicons';
@@ -45,11 +45,10 @@ const Sidebar = () => {
               return (
                 <NavLink to={item.path} key = {index} activeClassName = 'active' className = "menuItem">
                   <item.icon/>
-                  <span >
+                  <span > 
                     {item.heading}
                   </span>
                 </NavLink>
-             
               );
              })}
              <div className="menuItem">

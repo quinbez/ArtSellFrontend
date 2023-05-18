@@ -32,6 +32,29 @@
   grid-template-columns: 11rem auto 20rem;
   gap: 10px;
 }
+.Home{
+
+    background: linear-gradient(
+      106.37deg,
+      #D9AFD9,
+      #97D9E1
+    );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+.HomeGlass{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  border-radius: 0rem;
+  /* background-color: var(--glass); */
+  overflow: hidden;
+  grid-template-columns: 11rem auto 20rem;
+  gap: 10px;
+}
 @media screen and (max-width:1200px) {
   .AppGlass{
     grid-template-columns: 10% 50% auto;
