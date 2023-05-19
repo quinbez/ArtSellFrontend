@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import User from './Pages/User';
 import Order from './Pages/Order';
 import Payment from './Pages/Payment';
@@ -18,31 +15,26 @@ import Contact from './components/Customer/Contact';
 import UserPayment from './components/Customer/UserPayment';
 import UserOrders from './components/Customer/UserOrders';
 import Cart from './components/Customer/Cart';
-
-
-const router = createBrowserRouter([
-  {path: "/", element: <App />},
-  {path: "/user", element: <User />},
-  {path: "/product", element: <Product />},
-  {path: "/category", element: <Category />},
-  {path: "/payment", element: <Payment />},
-  {path: "/order", element: <Order />},
-  {path: "/donation", element: <Donation/>},
-  {path: "/home", element: <Home />},
-  {path: "/allProducts", element: <Products/>},
-  {path: "/services", element: <Services/>},
-  {path: '/contact', element:<Contact/>},
-  {path:'userpayment', element:<UserPayment/>},
-  {path:'/userorders', element:<UserOrders/>},
-  {path:'/usercart', element:<Cart/>},
-]);
+import Team from './components/Customer/Team';
 
 ReactDOM.render(
-    <RouterProvider router = {router} />,
+  <Router>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/user" element={<User />} />
+      <Route path="/product" element={<Product />} />
+      <Route path="/category" element={<Category />} />
+      <Route path="/payment" element={<Payment />} />
+      <Route path="/order" element={<Order />} />
+      <Route path="/donation" element={<Donation />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/allProducts" element={<Products />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/userpayment" element={<UserPayment />} />
+      <Route path="/team" element={<Team />} />
+      <Route path="/usercart" element={<Cart />} />
+    </Routes>
+  </Router>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-

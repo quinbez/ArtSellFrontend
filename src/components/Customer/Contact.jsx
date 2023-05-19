@@ -3,14 +3,12 @@ import Navbar from './Navbar'
 
 const Contact = () => {
   return (
-    <div className="App">
-      <div className='AppGlass'>   
+    <div className="Home">
         <Navbar/>
         <div className='pageTitle'>
           <h1>Contact Us</h1>
         </div>
       </div>
-  </div>  
   )
 }
 

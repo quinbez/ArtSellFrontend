@@ -9,7 +9,7 @@ function Services() {
     <div className="Home">
           <Navbar/>
             <main id="main">
-                <section id="services" className="about">
+                <section id="services" className="services">
                     <div className="container" data-aos="fade-up">
                         <div className="row">
                             <div className="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
