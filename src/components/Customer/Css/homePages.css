@@ -131,12 +131,12 @@ a,a:hover{
 }
 /* SectionTitle */
 section {
-  padding: 60px 0;
+  padding: 90px 0;
   overflow: hidden;
 }
 
 .section-title {
-  padding-bottom: 40px;
+  padding-bottom: 40px;  
 }
 
 .section-title h2 {
