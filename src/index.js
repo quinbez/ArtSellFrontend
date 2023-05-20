@@ -16,6 +16,8 @@ import UserPayment from './components/Customer/UserPayment';
 import UserOrders from './components/Customer/UserOrders';
 import Cart from './components/Customer/Cart';
 import Team from './components/Customer/Team';
+import Login from './components/Customer/Login';
+import Register from './components/Customer/Register';
 
 ReactDOM.render(
   <Router>
@@ -34,6 +36,8 @@ ReactDOM.render(
       <Route path="/userpayment" element={<UserPayment />} />
       <Route path="/team" element={<Team />} />
       <Route path="/usercart" element={<Cart />} />
+      <Route path='/login' element = {<Login/>} />
+      <Route path='/register' element = {<Register/>} />
     </Routes>
   </Router>,
   document.getElementById('root')

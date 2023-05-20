@@ -55,7 +55,7 @@ function NavBar() {
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
-          <Link className="get-started-btn">
+          <Link className="get-started-btn" to="/login">
             Get started
           </Link>
         </div>

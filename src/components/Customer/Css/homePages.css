@@ -424,3 +424,76 @@ section {
 .contact .php-email-form button[type=submit]:hover {
   background: #ffcd6b;
 }
+/* Login CSS */
+.getStarted{
+  background: linear-gradient(
+    106.37deg,
+    #D9AFD9,
+    #97D9E1
+  );
+  height: 100vh;
+}
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #743674;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #c080c0;
+}
+/* Register Css */
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-container input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 10px;
+  background-color:  #743674;
+  color: white;
+  border: none;
+  cursor: pointer
+}
+.register-container button:hover {
+  background-color: #c080c0;
+}
