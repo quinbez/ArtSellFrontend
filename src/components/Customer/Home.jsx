@@ -25,7 +25,7 @@ function Home() {
           <div className="col-xl-2 col-md-4">
             <div className="icon-box">
               <i className="ri-store-line"></i>
-              <h3><Link to="/allProducts">Ink drawing</Link></h3>
+              <h3><Link to="/inkDrawing">Ink drawing</Link></h3>
             </div>
           </div>
           <div className="col-xl-2 col-md-4">

@@ -18,6 +18,7 @@ import Cart from './components/Customer/Cart';
 import Team from './components/Customer/Team';
 import Login from './components/Customer/Login';
 import Register from './components/Customer/Register';
+import InkDrawing from './components/Customer/Products/InkDrawing';
 
 ReactDOM.render(
   <Router>
@@ -31,6 +32,7 @@ ReactDOM.render(
       <Route path="/donation" element={<Donation />} />
       <Route path="/home" element={<Home />} />
       <Route path="/allProducts" element={<Products />} />
+      <Route path= "/inkDrawing" element = {<InkDrawing />}/>
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/userpayment" element={<UserPayment />} />

@@ -31,41 +31,42 @@ function Products() {
           <div className="row" data-aos="fade-up" data-aos-delay="100">
             <div className="col-lg-12 d-flex justify-content-center">
               <ul id="allProducts-flters">
+              <Link >
               <li
                 data-filter="*"
                 className={activeFilter === '*' ? 'filter-active' : ''}
                 onClick={() => handleFilterClick('*')}
               >
                 All
-              </li>                
-              <li
+              </li></Link>                
+             <Link><li
                 data-filter=".filter-app"
                 className={activeFilter === '.filter-app' ? 'filter-active' : ''}
                 onClick={() => handleFilterClick('.filter-app')}
               >
                 Sketches
-              </li>
-              <li
+              </li></Link>
+              <Link><li
                 data-filter=".filter-card"
                 className={activeFilter === '.filter-card' ? 'filter-active' : ''}
                 onClick={() => handleFilterClick('.filter-card')}
               >
                 Paintings
-              </li>
-              <li
+              </li></Link>
+              <Link><li
                 data-filter=".filter-web"
                 className={activeFilter === '.filter-web' ? 'filter-active' : ''}
                 onClick={() => handleFilterClick('.filter-web')}
               >
                 Digital
-              </li>
-              <li
+              </li></Link>
+              <Link to="/inkDrawing"><li
                 data-filter=".filter-ink"
                 className={activeFilter === '.filter-ink' ? 'filter-active' : ''}
-                onClick={() => handleFilterClick('.filter-ink')}
+                onClick={() => handleFilterClick('.filter-ink')} 
               >
                 Ink
-              </li>
+              </li></Link>
               </ul>
             </div>
           </div>
